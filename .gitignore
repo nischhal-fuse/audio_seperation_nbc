@@ -1,0 +1,9 @@
+# Ignore lock files
+*.lock
+
+# Ignore audio files but keep the folder structures
+
+**/*.wav
+
+# Ignore environment variable files
+*.env
