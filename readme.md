@@ -1228,7 +1228,20 @@ Generating realistic synthetic audio data requires attention to acoustic princip
 **Remember**: The quality of your training data directly impacts model performance. It's worth spending time to get it right!
 
 ---
+## Training
+Default epochs: Changed from 100 → 10 epochs
+Save interval: Changed from 5 → 2 epochs (so you'll have checkpoints at epochs 2, 4, 6, 8, 10)
+Quick Start Command:
 
+```
+python nbc_train.py \
+    --dataset_root WSJ0_8ch_noisy_reverb \
+    --batch_size 4 \
+    --epochs 10
+```
+---
+
+---
 **Document Version**: 1.0  
 **Last Updated**: November 2025  
 **Author**: Audio Processing Best Practices Guide  
